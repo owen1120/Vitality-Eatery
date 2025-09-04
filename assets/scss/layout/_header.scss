@@ -1,4 +1,28 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  .container{
+    display: flex;
+    gap: 3rem;
+    .header-nav{
+      display: flex;
+      gap: 3rem;
+      flex-grow: 1;
+      padding-top: 1.5rem;
+      .header-logo{
+        width: 240px;
+      }
+      .header-search{
+        flex-grow: 1;
+      }
+      .header-nav-list{
+        display: flex;
+        gap: 1rem;
+        color: $primary-green-200;
+        padding: .75 0;
+        .nav-link{
+          line-height: 1.5;
+          padding: 1rem;
+        }
+      }
+    }
+  }
 }
