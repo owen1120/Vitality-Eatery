@@ -1,25 +1,28 @@
-body {
-  letter-spacing: 0.02em;
-  color: #141a1f;
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+body{
+    font-family: $font-family;
+    color: $text-primary;
+    font-size: var(--body-md);
+    line-height: var(--body-line-height);
+    font-weight: var(--regular);
+}
+
+a{
+    display: block;
+    color: $text-primary;
+    text-decoration: none;
+}
+
+img{
+    display: block;
 }
 
 .container{
     max-width: 1320px;
+    padding: 0 12px;
     margin: 0 auto;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  line-height: 1.2;
-  margin: 0;
 }
