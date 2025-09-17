@@ -1,28 +1,16 @@
 .header{
-  .container{
-    display: flex;
-    gap: 3rem;
-    .header-nav{
-      display: flex;
-      gap: 3rem;
-      flex-grow: 1;
-      padding-top: 1.5rem;
-      .header-logo{
-        width: 240px;
+  .navbar{
+    padding: 1rem .75rem;
+    .navbar-brand{
+      svg{
+        width: 138px;
+        height: 40px;
       }
-      .header-search{
-        flex-grow: 1;
-      }
-      .header-nav-list{
-        display: flex;
-        gap: 1rem;
-        color: $primary-green-200;
-        padding: .75 0;
-        .nav-link{
-          line-height: 1.5;
-          padding: 1rem;
-        }
-      }
+    }
+    .navbar-toggler{
+      width: 40px;
+      height: 40px;
+      border: none;
     }
   }
 }

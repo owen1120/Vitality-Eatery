@@ -1,6 +1,4 @@
 import './assets/scss/all.scss';
-import './node_modules/feather-icons/dist/feather.min';
-
-feather.replace();
+import './node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 console.log('Hello world');

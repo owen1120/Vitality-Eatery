@@ -1,5 +1,5 @@
 {
-  "name": "vitality-eatery",
+  "name": "web-layout-training-vite-bootstrap",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,7 +15,7 @@
     "vite-plugin-ejs": "^1.7.0"
   },
   "dependencies": {
-    "feather-icons": "^4.29.2",
+    "bootstrap": "^5.3.8",
     "gh-pages": "^5.0.0",
     "glob": "^10.2.2",
     "sass": "^1.61.0",
