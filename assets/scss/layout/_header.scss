@@ -1,7 +1,12 @@
 .header{
   .navbar{
-    padding: 1rem .75rem;
+    padding: 0;
+    .container-fluid{
+      padding: 0;
+    }
     .navbar-brand{
+      margin: var(--spacing-4) 0;
+      margin-left: var(--spacing-3);
       svg{
         width: 138px;
         height: 40px;
@@ -10,7 +15,54 @@
     .navbar-toggler{
       width: 40px;
       height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border: none;
+      padding: 0;
+      margin: var(--spacing-4) 0;
+      margin-right: var(--spacing-3);
+      .navbar-toggler-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+    .navbar-collapse{
+      gap: 0;
+      background-color: #F1F7ED;
+      box-shadow: 0px 4px 8px rgba(#3D6C1D, 0.2);
+      padding-bottom: var(--spacing-5);
+      .navbar-nav .nav-link{
+        font-size: var(--body);
+        line-height: var(--body-line-height);
+        color: $primary-200;
+        padding: var(--spacing-4) var(--spacing-6);
+      }
+      .header-search{
+        position: relative;
+        padding: var(--spacing-2) var(--spacing-3);
+        .form-control{
+          color: $neutral-400;
+          font-size: var(--body);
+          line-height: var(--body-line-height);
+          background-color: $neutral-0;
+          border: 2px solid rgba($color: #72AC4A, $alpha: 0.6);
+          border-radius: var(--radius-circle);
+          padding: var(--spacing-4) var(--spacing-6);
+        }
+        .btn{
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: 50%;
+          right: var(--spacing-5);
+          transform: translateY(-50%);
+          color: $neutral-0;
+          background-color: $primary-200;
+          border: none;
+          border-radius: var(--radius-circle);
+        }
+      }
     }
   }
 }

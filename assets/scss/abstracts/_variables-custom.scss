@@ -70,7 +70,7 @@ $font-family: $en-font-family, $zh-font-family;
     --bold: 700;
     --regular: 400;
     --title-line-height: 1.2;
-    --body-line-height: 1.2;
+    --body-line-height: 1.5;
 }
 
 // spacing -------------------------------------------------------------------
@@ -84,13 +84,14 @@ $font-family: $en-font-family, $zh-font-family;
     --spacing-5: 20px;
     --spacing-6: 24px;
     --spacing-7: 32px;
-    --spacing-8: 40px;
-    --spacing-9: 48px;
-    --spacing-10: 64px;
-    --spacing-11: 72px;
-    --spacing-12: 80px;
-    --spacing-13: 96px;
-    --spacing-14: 128px;
+    --spacing-8: 36px;
+    --spacing-9: 40px;
+    --spacing-10: 48px;
+    --spacing-11: 64px;
+    --spacing-12: 72px;
+    --spacing-13: 80px;
+    --spacing-14: 96px;
+    --spacing-15: 128px;
 }
 
 // breakpoints --------------------------------------------------------------
@@ -114,6 +115,7 @@ $border-color: $neutral-400;
     --radius-4: 16px;
     --radius-5: 24px;
     --radius-6: 32px;
-    --radius-7: 48px;
-    --radius-circle: 50%;
+    --radius-7: 36px;
+    --radius-8: 48px;
+    --radius-circle: 1000px;
 }

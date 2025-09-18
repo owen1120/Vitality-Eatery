@@ -1,4 +1,84 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    padding: 0;
+    .content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.75rem;
+      .footer-logo svg{
+        width: 232px;
+        height: 64px;
+      }
+      .footer-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-2);
+        .link-item{
+          font-size: var(--body);
+          color: $primary-200;
+          padding: var(--spacing-4);
+        }
+      }
+      .corp-information{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-2);
+        font-size: var(--small);
+        text-align: center;
+        color: $neutral-600;
+      }
+    }
+    .footer-decorate{
+      height: 234px;
+      position: relative;
+      .decorate-1{
+        width: 70%;
+        height: 234px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-1);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-top-left-radius: var(--radius-7);
+        background-color: $secondary-200;
+        padding: var(--spacing-8);
+        .decorate-title{
+          font-size: var(--small);
+          font-weight: var(--bold);
+          color: $neutral-800;
+          padding: 0 var(--spacing-3);
+        }
+        .social-icons{
+          display: flex;
+          .social-icon{
+            padding: var(--spacing-3);
+          }
+        }
+      }
+      .decorate-2{
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $primary-200;
+        border-top-left-radius: var(--radius-5);
+        border-top-right-radius: var(--radius-5);
+        padding: var(--spacing-8) var(--spacing-4);
+        .copyright{
+          font-size: var(--small);
+          color: $neutral-0;
+          line-height: var(--body-line-height);
+          text-align: center;
+          text-wrap: wrap;
+        }
+      }
+    }
+  }
 }
