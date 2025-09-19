@@ -1,0 +1,97 @@
+.card-product{
+    height: 292px;
+    position: relative;
+    .card-top{
+        position: relative;
+        .banner-img-box{
+            height: 184px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: var(--radius-4);
+            overflow: hidden;
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .tag-bar{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: var(--spacing-4);
+            .tag-box{
+                background-color: $secondary-200;
+                border-top-right-radius: var(--radius-circle);
+                border-bottom-right-radius: var(--radius-circle);
+                padding: var(--spacing-2) var(--spacing-4);
+                .tag{
+                    font-size: var(--body);
+                    color: $neutral-800;
+                }
+            }
+            .card-icon-btns{
+                display: flex;
+                .card-icon-btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    background: none;
+                    border: none;
+                    padding: var(--spacing-3);
+                    .card-heart{
+                        position: relative;
+                        box-shadow: 0 0 4 rgba($color: #000000, $alpha: .5);
+                        z-index: 1;
+                    }
+                    .card-heart-fill{
+                        display: none;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+    .card-bottom{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: var(--spacing-2);
+        position: absolute;
+        bottom: 0;
+        .card-text-box{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-left: var(--spacing-4);
+            padding-bottom: var(--spacing-6);
+            .card-title{
+                font-size: var(--body);
+            }
+            .card-price{
+                font-size: var(--body);
+                font-weight: 600;
+                color: $primary-200;
+            }
+        }
+        .img-box{
+            width: 120px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    &:hover, .hover, &:focus, .focus{
+        .card-heart-fill{
+            display: block;
+        }
+    }
+}

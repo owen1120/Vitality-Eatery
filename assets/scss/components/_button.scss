@@ -1,0 +1,45 @@
+.btn-fill{
+    font-size: var(--heading-5);
+    line-height: var(--title-line-height);
+    color: $neutral-0;
+    background-color: $primary-200;
+    border: none;
+    border-radius: var(--radius-circle);
+    padding: var(--spacing-4) var(--spacing-10);
+}
+.btn-outline{
+    font-size: var(--heading-5);
+    line-height: var(--title-line-height);
+    color: $neutral-0;
+    background-color: $neutral-0;
+    border: 1px solid $primary-200;
+    border-radius: var(--radius-circle);
+    padding: var(--spacing-4) var(--spacing-10);
+}
+
+.btn-text-icon-outline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--heading-6);
+    line-height: var(--title-line-height);
+    color: $primary-200;
+    background: none;
+    border: 1px solid $primary-200;
+    border-radius: var(--radius-circle);
+    padding: var(--spacing-4) var(--spacing-6);
+}
+
+.shop-btn-sm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--heading-6);
+    line-height: var(--title-line-height);
+    background-color: $secondary-200;
+    border: none;
+    border-radius: var(--radius-4);
+    padding: var(--spacing-4);
+}
