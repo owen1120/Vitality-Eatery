@@ -95,3 +95,40 @@
         }
     }
 }
+
+.slide-card{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+    background-color: $neutral-0;
+    border-radius: var(--radius-4);
+    padding: var(--spacing-3);
+    .imgs{
+        border-radius: var(--radius-4);
+        overflow: hidden;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .card-title{
+        font-size: var(--heading-6);
+        font-weight: var(--bold);
+        line-height: var(--title-line-height);
+        color: $primary-200;
+    }
+    .subtitle-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-2);
+        .job-title, .name{
+            font-size: var(--body);
+            color: $neutral-800;
+        }
+    }
+    .desc{
+        font-size: var(--small);
+        color: $neutral-400;
+    }
+}

@@ -152,4 +152,109 @@
       }
     }
   }
+  .column-articles{
+    background-color: $secondary-200;
+    padding: var(--spacing-9) 0;
+    .container{
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-6);
+      .title-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-6);
+        .title{
+          font-size: var(--heading-6);
+          font-weight: var(--bold);
+        }
+        .btns button{
+          background: none;
+          border: none;
+          padding: var(--spacing-2);
+        }
+      }
+    }
+  }
+  .column-articles-1{
+    .carousel-container{
+      .slide-card-2, .slide-card-3, .slide-card-4{
+        display: none;
+      }
+    }
+  }
+  .column-articles-2{
+    background-color: transparent;
+    .container{
+      .title-wrapper{
+        align-items: flex-end;
+        .title-box{
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-2);
+          svg{
+            width: 40px;
+            height: 22px;
+          }
+          .title{
+            color: $primary-200;
+          }
+        }
+      }
+      .carousel-container{
+        .slide-card{
+          border-bottom: 1px solid $primary-200;
+          border-radius: 0;
+          .card-title{
+            font-size: var(--body);
+            font-weight: var(--regular);
+            color: $neutral-800;
+          }
+          .desc{
+            color: $neutral-600;
+          }
+          .card-bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .date{
+              display: flex;
+              gap: var(--spacing-1);
+              color: $primary-200;
+              p{
+                font-size: var(--small);
+                font-weight: var(--bold);
+              }
+              span{
+                font-family: $en-font-family;
+                font-size: var(--small);
+                font-weight: 600;
+              }
+            }
+            .read-more{
+              display: flex;
+              gap: var(--spacing-2);
+              font-size: var(--small);
+              font-weight: var(--bold);
+              color: $primary-200;
+              svg{
+                width: var(--spacing-4);
+                height: var(--spacing-4);
+              }
+            }
+          }
+        }
+        .slide-card-4{
+          .imgs{
+            img{
+              transform: rotate(180deg);
+            }
+          }
+        }
+        .slide-card-2, .slide-card-3, .slide-card-4{
+          display: none;
+        }
+      }
+    }
+  }
 }
