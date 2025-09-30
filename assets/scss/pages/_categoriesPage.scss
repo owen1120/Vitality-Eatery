@@ -1,0 +1,75 @@
+.main-categories{
+    .banner{
+        padding: var(--spacing-5) var(--spacing-3);
+        .banner-imgs{
+            position: relative;
+            border-radius: var(--radius-6);
+            overflow: hidden;
+            img{
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .title-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spacing-6);
+                padding: var(--spacing-9) var(--spacing-6);
+                .pageTitle{
+                    font-size: var(--heading-4);
+                    line-height: var(--title-line-height);
+                    color: $neutral-800;
+                    text-align: center;
+                }
+                .dots{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: var(--spacing-10);
+                    .dot{
+                        width: .5rem;
+                        height: .5rem;
+                        background-color: $primary-200;
+                        border-radius: var(--radius-circle);
+                    }
+                }
+            }
+        }
+    }
+
+    .content{
+        padding: var(--spacing-9) 0;
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-6);
+            .breadcrumb{
+                width: 100%;
+                overflow: auto;
+                margin: 0;
+                .breadcrumb-item{
+                    width: auto;
+                    font-size: var(--small);
+                    line-height: var(--body-line-height);
+                    text-wrap: nowrap;
+                    a{
+                        color: $neutral-400;
+                        span{
+                            padding: 0;
+                        }
+                    }
+                }
+                .breadcrumb-item.active{
+                    color: $primary-200;
+                }
+                :nth-child(2){
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+}
