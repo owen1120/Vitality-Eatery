@@ -99,6 +99,7 @@
       .container{
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         gap: var(--spacing-10);
         .desktop-view{
           display: block;
@@ -111,6 +112,7 @@
           .header-search{
             position: relative;
             flex-grow: 1;
+            margin-bottom: var(--spacing-2);
             .form-control{
               flex-grow: 1;
               color: $neutral-400;
@@ -162,24 +164,25 @@
         }
         .header-btns{
           display: flex;
-          padding: var(--spacing-5) var(--spacing-3);
+          padding: 0;
           .header-btn{
             width: 50%;
             border-radius: 0;
-            padding: var(--spacing-3) var(--spacing-4);
+            padding: var(--spacing-6) 1.75rem;
+            padding-top: var(--spacing-7);
           }
           .header-btn.users{
             background-color: $primary-200;
-            border-top-left-radius: var(--radius-2);
-            border-bottom-left-radius: var(--radius-2);
+            border-top-left-radius: 0;
+            border-bottom-left-radius: var(--radius-4);
             svg{
               fill: $neutral-0;
             }
           }
           .header-btn.cart{
             background-color: $secondary-200;
-            border-top-right-radius: var(--radius-2);
-            border-bottom-right-radius: var(--radius-2);
+            border-top-right-radius: 0;
+            border-bottom-right-radius: var(--radius-4);
           }
         }
       }
