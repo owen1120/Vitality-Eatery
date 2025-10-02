@@ -60,6 +60,7 @@
 
   .products{
     padding: var(--spacing-9) var(--spacing-0);
+    overflow: hidden;
     .container{
       display: flex;
       flex-direction: column;
@@ -300,6 +301,9 @@
           display: none;
         }
       }
+    }
+    .pattern.desktop-view{
+      display: none;
     }
   }
 }
@@ -569,6 +573,8 @@
     }
 
     .column-articles-2{
+      position: relative;
+      overflow: hidden;
       .container{
         flex-direction: row;
         align-items: flex-start;
@@ -617,7 +623,15 @@
           }
         }
       }
+      .pattern.desktop-view{
+        width: 512px;
+        height: 308px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+      }
     }
-
   }
 }
